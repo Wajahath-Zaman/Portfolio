@@ -198,12 +198,59 @@ const projects = [
       "EDA",
       "Data Visualization",
       "Pandas",
-      "Seaborn"
+      "Seaborn",
+      "Hypothesis Testing"
     ],
 
     impact:
       "Identified customer purchase patterns and behavioral insights."
+  },
+  {
+    title: "Yulu Bike Rental Demand Analysis",
+
+    slug: "yulu-bike-rental-demand-analysis",
+
+    description:
+      "Performed exploratory data analysis and hypothesis testing on Yulu bike rental data to identify seasonal, weather, and user behavior factors affecting demand.",
+
+    icon: FaBicycle,
+
+    chart: (
+      <ResponsiveContainer width="100%" height={200}>
+        <BarChart data={seasonData}>
+
+          <CartesianGrid strokeDasharray="3 3" />
+
+          <XAxis dataKey="season" />
+
+          <YAxis />
+
+          <Tooltip />
+
+          <Bar
+            dataKey="rentals"
+            fill="#8E3B76"
+            radius={[6, 6, 0, 0]}
+          />
+
+        </BarChart>
+      </ResponsiveContainer>
+    ),
+
+    tech: [
+      "Python",
+      "EDA",
+      "Hypothesis Testing",
+      "Pandas",
+      "Seaborn",
+      "SciPy",
+      "Matplotlib"
+    ],
+
+    impact:
+      "Identified weather, seasonal, humidity, and commuting patterns affecting bike rental demand and provided business recommendations to improve user growth by 15%."
   }
+
 
 ]
 
