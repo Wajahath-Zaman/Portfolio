@@ -5,7 +5,8 @@ import {
   FaExternalLinkAlt,
   FaFilm,
   FaShoppingCart,
-  FaDumbbell
+  FaDumbbell,
+  FaBicycle
 } from "react-icons/fa"
 
 import {
@@ -45,6 +46,14 @@ const COLORS = [
   "#8b5cf6",
   "#10b981"
 ]
+
+const seasonData = [
+  { season: "Spring", rentals: 312498 },
+  { season: "Summer", rentals: 588282 },
+  { season: "Fall", rentals: 640662 },
+  { season: "Winter", rentals: 544034 }
+]
+
 
 const projects = [
 
@@ -198,8 +207,7 @@ const projects = [
       "EDA",
       "Data Visualization",
       "Pandas",
-      "Seaborn",
-      "Hypothesis Testing"
+      "Seaborn"
     ],
 
     impact:
@@ -216,21 +224,29 @@ const projects = [
     icon: FaBicycle,
 
     chart: (
-      <ResponsiveContainer width="100%" height={200}>
-        <BarChart data={seasonData}>
 
-          <CartesianGrid strokeDasharray="3 3" />
 
-          <XAxis dataKey="season" />
+      <ResponsiveContainer width="100%" height={220}>
+        <BarChart
+          data={seasonData}
+          margin={{ top: 20, right: 20, left: 0, bottom: 5 }}
+        >
 
-          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" opacity={0.2} />
+
+          <XAxis
+            dataKey="season"
+            tick={{ fontSize: 12 }}
+          />
+
+          <YAxis tick={{ fontSize: 12 }} />
 
           <Tooltip />
 
           <Bar
             dataKey="rentals"
             fill="#8E3B76"
-            radius={[6, 6, 0, 0]}
+            radius={[10, 10, 0, 0]}
           />
 
         </BarChart>

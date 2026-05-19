@@ -97,6 +97,39 @@ const projectsData = {
 
     notebook:
       "/projects/aerofit-treadmill-data-analytics-project.html"
+  },
+  "yulu-bike-rental-demand-analysis": {
+
+    title: "Yulu Bike Rental Demand Analysis",
+
+    category: "Business Analytics • Hypothesis Testing",
+
+    description:
+      "Performed exploratory data analysis and statistical hypothesis testing on Yulu bike rental demand data to identify seasonal, weather, and behavioral factors affecting rentals.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "Seaborn",
+      "Matplotlib",
+      "SciPy",
+      "EDA",
+      "Hypothesis Testing"
+    ],
+
+    results: [
+      "Identified strong seasonal trends influencing bike rentals",
+      "Analyzed impact of weather and humidity on customer demand",
+      "Detected peak commuting hours through hourly usage analysis",
+      "Performed T-Test, Kruskal-Wallis, and Chi-Square hypothesis testing",
+      "Generated operational and marketing recommendations to improve demand"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/Yulu-Bike-Rental-Demand-Analysis",
+
+    notebook:
+      "/projects/yulu-bike-rental-demand-analysis.html"
   }
 
 }

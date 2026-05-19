@@ -16,7 +16,7 @@ const ProjectPage = () => {
 
   window.scrollTo(0, 0)
 
-}, [projectId])
+}, [projectId]) 
 
   const project = projectsData[projectId]
 
