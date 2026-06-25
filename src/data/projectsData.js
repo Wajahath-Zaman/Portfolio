@@ -2,6 +2,43 @@
 
 const projectsData = {
 
+  "end-to-end-ecommerce-data-analytics-project": {
+
+    title: "End-to-End E-Commerce Data Analytics Project",
+
+    category: "End-to-End Data Analytics",
+
+    description:
+      "Built a complete end-to-end data analytics solution using a Brazilian e-commerce dataset, covering business understanding, Excel data validation, SQL analysis, Python exploratory data analysis, statistical testing, and Tableau dashboard development to generate actionable business insights.",
+
+    technologies: [
+      "Excel",
+      "MySQL",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "SciPy",
+      "Tableau",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+      "Analyzed 89,301+ e-commerce orders across 5 relational tables",
+      "Answered 30+ business questions using advanced SQL, CTEs, and window functions",
+      "Performed 20+ exploratory data analyses and statistical tests using Python",
+      "Built 3 interactive Tableau dashboards with 15+ business KPIs and visualizations",
+      "Identified 10+ actionable business insights and recommendations to improve sales, logistics, and customer experience"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/END-TO-END-ECommerce-Data-Analytics-Project",
+
+    notebook:
+      "/projects/E_Commerce_DA_Project.html"
+  },
+
   "netflix-content-analysis-project": {
 
     title: "Netflix Content Analysis Project",

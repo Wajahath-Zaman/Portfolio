@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:zamanwajahath@email.com"
+              href="mailto:mohammadwajahathzaman@gmail.com"
               className="text-gray-400 hover:text-cyan-400 transition-colors"
             >
               <Mail className="w-5 h-5" />

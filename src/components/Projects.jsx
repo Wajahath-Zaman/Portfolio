@@ -12,6 +12,8 @@ import {
 import {
   BarChart,
   Bar,
+  AreaChart,  
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -56,6 +58,61 @@ const seasonData = [
 
 
 const projects = [
+
+  {
+    title: "End-to-End E-Commerce Data Analytics Project",
+
+    slug: "end-to-end-ecommerce-data-analytics-project",
+
+    description:
+      "Designed and executed a complete data analytics workflow on a Brazilian e-commerce dataset, covering business understanding, SQL analysis, Python exploratory data analysis, statistical testing, and Tableau dashboard development to generate actionable business insights.",
+
+    icon: FaShoppingCart,
+
+    chart: (
+      <ResponsiveContainer width="100%" height={200}>
+        <AreaChart data={salesData}>
+          <defs>
+            <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+
+          <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+
+          <XAxis dataKey="month" />
+
+          <YAxis />
+
+          <Tooltip />
+
+          <Area
+            type="monotone"
+            dataKey="revenue"
+            stroke="#3b82f6"
+            fill="url(#colorRevenue)"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    ),
+
+    tech: [
+      "Excel",
+      "MySQL",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "SciPy",
+      "Tableau",
+      "Jupyter Notebook"
+    ],
+
+    impact:
+      "Analyzed 89K+ e-commerce transactions across five relational tables, answering 30+ business questions through SQL, Python EDA, statistical analysis, and three interactive Tableau dashboards."
+  },
 
   {
     title: "Netflix Content Analysis Project",
@@ -107,7 +164,6 @@ const projects = [
     impact:
       "Analyzed Netflix content trends and audience-focused insights."
   },
-
 
 
   {
