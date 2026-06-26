@@ -36,7 +36,7 @@ const projectsData = {
       "https://github.com/Wajahath-Zaman/END-TO-END-ECommerce-Data-Analytics-Project",
 
     notebook:
-      "/projects/E_Commerce_DA_Project.html"
+      "/notebooks/E_Commerce_DA_Project.html"
   },
 
   "netflix-content-analysis-project": {
@@ -67,7 +67,7 @@ const projectsData = {
       "https://github.com/Wajahath-Zaman/Netflix-Content-Analysis-Project",
 
     notebook:
-      "/projects/netflix-content-analysis-project.html"
+      "/notebooks/netflix-content-analysis-project.html"
   },
 
 
@@ -100,7 +100,7 @@ const projectsData = {
       "https://github.com/Wajahath-Zaman/End-to-End-Walmart-Data-Analysis-Project-Business-Case-Study",
 
     notebook:
-      "/projects/walmart-business-case-study.html"
+      "/notebooks/walmart-business-case-study.html"
   },
 
 
@@ -133,7 +133,7 @@ const projectsData = {
       "https://github.com/Wajahath-Zaman/Aerofit-Treadmill-Data-Analytics-Project",
 
     notebook:
-      "/projects/aerofit-treadmill-data-analytics-project.html"
+      "/notebooks/aerofit-treadmill-data-analytics-project.html"
   },
   "yulu-bike-rental-demand-analysis": {
 
@@ -166,7 +166,7 @@ const projectsData = {
       "https://github.com/Wajahath-Zaman/Yulu-Bike-Rental-Demand-Analysis",
 
     notebook:
-      "/projects/yulu-bike-rental-demand-analysis.html"
+      "/notebooks/yulu-bike-rental-demand-analysis.html"
   }
 
 }
