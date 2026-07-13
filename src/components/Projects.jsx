@@ -6,7 +6,8 @@ import {
   FaFilm,
   FaShoppingCart,
   FaDumbbell,
-  FaBicycle
+  FaBicycle,
+  FaNewspaper
 } from "react-icons/fa"
 
 import {
