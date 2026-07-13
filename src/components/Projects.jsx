@@ -12,7 +12,7 @@ import {
 import {
   BarChart,
   Bar,
-  AreaChart,  
+  AreaChart,
   Area,
   XAxis,
   YAxis,
@@ -56,8 +56,74 @@ const seasonData = [
   { season: "Winter", rentals: 544034 }
 ]
 
+const articleTrendData = [
+  { day: "Mon", articles: 42 },
+  { day: "Tue", articles: 57 },
+  { day: "Wed", articles: 51 },
+  { day: "Thu", articles: 68 },
+  { day: "Fri", articles: 73 },
+  { day: "Sat", articles: 61 },
+  { day: "Sun", articles: 79 },
+];
+
 
 const projects = [
+  {
+    title: "TechPulse - Tech News Analytics Platform",
+
+    slug: "techpulse-tech-news-analytics-platform",
+
+    description:
+      "Designed and developed an end-to-end tech news analytics platform that automates data collection from multiple technology news publishers using custom Python web scrapers, processes the data through an ETL pipeline, stores it in a normalized MySQL database, and performs SQL and Python-based analytics to uncover technology trends and publishing insights.",
+
+    icon: FaNewspaper,
+
+    chart: (
+      <ResponsiveContainer width="100%" height={200}>
+        <AreaChart data={articleTrendData}>
+          <defs>
+            <linearGradient id="colorArticles" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#10b981" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+
+          <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+
+          <XAxis dataKey="day" />
+
+          <YAxis />
+
+          <Tooltip />
+
+          <Area
+            type="monotone"
+            dataKey="articles"
+            stroke="#10b981"
+            fill="url(#colorArticles)"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    ),
+
+    tech: [
+      "Python",
+      "Requests",
+      "BeautifulSoup",
+      "RSS",
+      "MySQL",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "GitHub Actions",
+      "Jupyter Notebook"
+    ],
+
+    impact:
+      "Built an automated ETL pipeline that aggregates technology news from four major publishers into a centralized MySQL database, enabling 30+ SQL analyses, 12+ Python visualizations, and establishing a scalable foundation for future NLP and trend analysis."
+  },
 
   {
     title: "End-to-End E-Commerce Data Analytics Project",

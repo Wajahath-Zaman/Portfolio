@@ -1,6 +1,47 @@
 // src/data/projectsData.js
 
 const projectsData = {
+  
+  "techpulse-tech-news-analytics-platform": {
+
+    title: "TechPulse - Tech News Analytics Platform",
+
+    category: "End-to-End Data Engineering & Analytics",
+
+    description:
+      "Built an end-to-end automated tech news analytics platform that continuously collects articles from multiple technology publishers using custom Python web scrapers, processes them through an ETL pipeline, stores the data in a normalized MySQL database, and performs SQL and Python-based analytics to uncover trends and insights from technology news.",
+
+    technologies: [
+      "Python",
+      "Requests",
+      "BeautifulSoup",
+      "RSS Feeds",
+      "MySQL",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Jupyter Notebook",
+      "GitHub Actions",
+      "Git",
+      "Tableau"
+    ],
+
+    results: [
+      "Developed automated ETL pipelines to collect and process technology news from 4 major publishers",
+      "Designed and implemented a normalized MySQL database with fact, dimension, and bridge tables for scalable analytics",
+      "Performed 30+ SQL business analyses and 12+ Python exploratory analyses to identify publishing trends, technology mentions, and content patterns",
+      "Automated data collection every 6 hours using GitHub Actions for continuous dataset growth",
+      "Established a scalable foundation for future NLP applications including sentiment analysis, topic modeling, and trend forecasting"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/TechPulse",
+
+    notebook:
+      "/notebooks/TechPulse_News_analytics.html"
+  },
 
   "end-to-end-ecommerce-data-analytics-project": {
 
