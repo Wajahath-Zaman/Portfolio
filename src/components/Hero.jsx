@@ -153,7 +153,7 @@ const Hero = () => {
                     <div className="p-6 rounded-xl bg-white border border-gray-200 shadow-sm">
 
                         <div className="text-4xl font-bold mb-2 text-cyan-500">
-                            3+
+                            8+
                         </div>
 
                         <div className="text-gray-600">
@@ -177,7 +177,7 @@ const Hero = () => {
                     <div className="p-6 rounded-xl bg-white border border-gray-200 shadow-sm">
 
                         <div className="text-4xl font-bold mb-2 text-purple-500">
-                            3+
+                            4+
                         </div>
 
                         <div className="text-gray-600">
