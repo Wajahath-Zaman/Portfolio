@@ -7,7 +7,8 @@ import {
   FaShoppingCart,
   FaDumbbell,
   FaBicycle,
-  FaNewspaper
+  FaNewspaper,
+  FaChartline
 } from "react-icons/fa"
 
 import {
