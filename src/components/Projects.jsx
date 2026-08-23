@@ -8,7 +8,8 @@ import {
   FaDumbbell,
   FaBicycle,
   FaNewspaper,
-  FaChartLine
+  FaChartLine,
+  FaUtensils
 } from "react-icons/fa"
 
 import {
@@ -79,8 +80,77 @@ const revenueTrendData = [
   { quarter: "Q4 2025", revenue: 1.48 }
 ];
 
+const customerAcquisitionTrendData = [
+  { month: "Jan", customers2024: 821, customers2025: 694 },
+  { month: "Feb", customers2024: 792, customers2025: 596 },
+  { month: "Mar", customers2024: 868, customers2025: 654 },
+  { month: "Apr", customers2024: 802, customers2025: 623 },
+  { month: "May", customers2024: 856, customers2025: 667 },
+  { month: "Jun", customers2024: 807, customers2025: 541 },
+  { month: "Jul", customers2024: 821, customers2025: 523 },
+  { month: "Aug", customers2024: 803, customers2025: 514 },
+  { month: "Sep", customers2024: 779, customers2025: 485 },
+  { month: "Oct", customers2024: 819, customers2025: 378 },
+  { month: "Nov", customers2024: 728, customers2025: 308 },
+  { month: "Dec", customers2024: 692, customers2025: 156 }
+];
+
 
 const projects = [
+
+  {
+  title: "TapEats - GMV Decline Root Cause Analysis",
+
+  slug: "tapeats-gmv-decline-root-cause-analysis",
+
+  description:
+    "Conducted an end-to-end business analytics investigation to identify the root cause behind TapEats' GMV decline using approximately 100,000 order-level transactions spanning two years across six major cities. Decomposed GMV into completed orders and average order value, investigated the order fulfillment pipeline, cancellations, delivery performance, customer acquisition, retention, acquisition channels, payment methods, cuisines, and platforms to isolate the primary driver of the decline.",
+
+  icon: FaUtensils,
+
+  chart: (
+    <ResponsiveContainer width="100%" height={200}>
+      <AreaChart data={customerAcquisitionTrendData}>
+        <defs>
+          <linearGradient id="colorAcquisition" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#10b981" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+
+        <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+
+        <XAxis dataKey="month" />
+
+        <YAxis />
+
+        <Tooltip />
+
+        <Area
+          type="monotone"
+          dataKey="customers2024"
+          stroke="#10b981"
+          fill="url(#colorAcquisition)"
+        />
+      </AreaChart>
+    </ResponsiveContainer>
+  ),
+
+  tech: [
+    "Google Sheets",
+    "Pivot Tables",
+    "Data Analysis",
+    "Data Visualization",
+    "Business Metrics",
+    "GMV Analysis",
+    "Customer Acquisition Analysis",
+    "Customer Retention Analysis",
+    "Cohort Analysis"
+  ],
+
+  impact:
+    "Investigated the decline in TapEats' GMV by analysing order volume, order cancellations, restaurant cancellations, delivery performance, customer acquisition, retention, and average order value. Established that operational efficiency and customer retention remained relatively healthy while customer acquisition declined substantially across all major acquisition channels. Recommended that leadership prioritize top-of-funnel marketing and customer acquisition while maintaining existing retention and logistics operations, with the Marketing team auditing campaign spend, CPA, and channel performance to restore user growth."
+},
 
   {
     title: "NimbusMart - Revenue Decline Root Cause Analysis",

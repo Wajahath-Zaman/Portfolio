@@ -2,6 +2,47 @@
 
 const projectsData = {
 
+  "tapeats-gmv-decline-root-cause-analysis": {
+
+    title: "TapEats - GMV Decline Root Cause Analysis",
+
+    category: "Business Analytics & Root Cause Analysis",
+
+    description:
+      "Conducted an end-to-end data analytics investigation to identify the underlying drivers behind TapEats' GMV decline. Decomposed the North Star Metric into key business drivers including active customers, customer retention, average orders, and delivery performance, then compared their behavior before and after the decline to isolate the primary cause. Further investigated customer acquisition across marketing channels and used the findings to develop actionable business recommendations.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Jupyter Notebook",
+      "Cohort Analysis",
+      "Customer Acquisition Analysis",
+      "Customer Retention Analysis",
+      "Business Metrics Analysis"
+    ],
+
+    results: [
+      "Decomposed GMV into key business drivers including active customers, customer retention, average order frequency, and delivery performance to identify the factors contributing to the decline",
+      "Found that approximately 90% of the investigated business metrics remained relatively stable before and after the decline, ruling out major operational and retention-related issues",
+      "Identified customer acquisition as the primary driver of the GMV decline after observing a substantial deterioration compared with the previous year",
+      "Found that customer acquisition remained approximately 15% lower throughout the second year and fell approximately 77% below the previous festive-season level",
+      "Established that customer acquisition declined across all major marketing channels, indicating a broad-based acquisition problem rather than an isolated channel issue",
+      "Analysed customer retention and existing customer behavior to determine that the business was successfully retaining its existing customers",
+      "Investigated the business response of increasing customer discounts to attract new customers and found that the strategy did not resolve the underlying customer acquisition problem",
+      "Recommended that the business work closely with the Marketing team to evaluate the performance of each acquisition channel and identify the underlying causes of declining customer acquisition",
+      "Recommended focusing resources on top-of-funnel marketing and acquisition while maintaining the existing strength in customer retention and operational performance"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/TapEats",
+
+    notebook:
+      "/notebooks/TapEats.html"
+  },
+
   "nimbusmart-revenue-decline-root-cause-analysis": {
 
     title: "NimbusMart - Revenue Decline Root Cause Analysis",
@@ -40,8 +81,9 @@ const projectsData = {
 
     notebook:
       "/notebooks/NimbusMart_Revenue_Analysis.html"
-  }, 
-  
+  },
+
+
   "techpulse-tech-news-analytics-platform": {
 
     title: "TechPulse - Tech News Analytics Platform",
