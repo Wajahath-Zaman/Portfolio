@@ -8,6 +8,27 @@ import {
 
 const certifications = [
   {
+    name: "Product Analytics Certificate",
+    issuer: "Scaler By InterviewBit",
+    date: "August 05, 2026",
+    logo: "📊",
+    skills: [
+      "Product Analytics",
+      "Python Programming for Data Science",
+      "SQL",
+      "Data Analysis",
+      "Data Visualization",
+      "Statistical Techniques",
+      "Deep Learning",
+      "Computer Vision",
+      "Natural Language Processing"
+    ],
+    verified: true,
+
+    link: "/certificates/Product_analytics.bmp"
+  }
+
+  , {
     name: "SQL Proficiency Certificate",
     issuer: "Scaler By InterviewBit",
     date: "2025",
