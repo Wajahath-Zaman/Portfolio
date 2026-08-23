@@ -124,7 +124,9 @@ const Hero = () => {
                         </motion.a>
 
                         <motion.a
-                            href="/wajahath_zaman_da_resume_august_2026.pdf"
+                            href={`${import.meta.env.BASE_URL}wajahath_zaman_da_resume_august_2026.pdf`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="px-8 py-3 border border-cyan-500 text-cyan-600 font-semibold rounded-lg hover:bg-cyan-50 transition-colors"
