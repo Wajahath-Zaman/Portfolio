@@ -67,8 +67,74 @@ const articleTrendData = [
   { day: "Sun", articles: 79 },
 ];
 
+const revenueTrendData = [
+  { quarter: "Q1 2024", revenue: 1.21 },
+  { quarter: "Q2 2024", revenue: 1.33 },
+  { quarter: "Q3 2024", revenue: 1.47 },
+  { quarter: "Q4 2024", revenue: 2.10 },
+  { quarter: "Q1 2025", revenue: 1.45 },
+  { quarter: "Q2 2025", revenue: 1.58 },
+  { quarter: "Q3 2025", revenue: 1.25 },
+  { quarter: "Q4 2025", revenue: 1.48 }
+];
+
 
 const projects = [
+
+  {
+    title: "NimbusMart - Revenue Decline Root Cause Analysis",
+
+    slug: "nimbusmart-revenue-decline-root-cause-analysis",
+
+    description:
+      "Conducted an end-to-end business analytics investigation to identify the root causes behind NimbusMart's revenue decline using 100,000 order-level transactions across two years. Decomposed revenue into customer activity, order frequency, and average order value, then investigated customer acquisition, retention, discounts, product categories, regions, marketing sources, and other business drivers to distinguish the key contributors from non-contributing factors.",
+
+    icon: FaChartLine,
+
+    chart: (
+      <ResponsiveContainer width="100%" height={200}>
+        <AreaChart data={revenueTrendData}>
+          <defs>
+            <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#10b981" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+
+          <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+
+          <XAxis dataKey="quarter" />
+
+          <YAxis />
+
+          <Tooltip />
+
+          <Area
+            type="monotone"
+            dataKey="revenue"
+            stroke="#10b981"
+            fill="url(#colorRevenue)"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    ),
+
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "SciPy",
+      "Statistical Hypothesis Testing",
+      "Cohort Analysis",
+      "Jupyter Notebook"
+    ],
+
+    impact:
+      "Analysed 100,000 order-level transactions to identify the drivers behind NimbusMart's revenue decline. Established that declining customer acquisition and a significant increase in discounting were key contributors, while cohort analysis showed relatively stable customer retention. Statistical testing was used to validate the significance of the discount increase, leading to recommendations around acquisition-channel performance and a more targeted discount strategy."
+  },
+
   {
     title: "TechPulse - Tech News Analytics Platform",
 

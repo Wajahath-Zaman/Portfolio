@@ -1,6 +1,46 @@
 // src/data/projectsData.js
 
 const projectsData = {
+
+  "nimbusmart-revenue-root-cause-analysis": {
+
+    title: "NimbusMart - Revenue Decline Root Cause Analysis",
+
+    category: "Business Analytics & Root Cause Analysis",
+
+    description:
+      "Conducted an end-to-end data analytics investigation to identify the underlying drivers behind NimbusMart's revenue decline using 100,000 order-level transactions spanning two years. Decomposed revenue into customer acquisition, order volume, and average order value, then investigated customer retention, product categories, pricing, discounts, marketing sources, customer segments, regions, and sales channels to distinguish the primary causes from non-contributing factors.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "SciPy",
+      "Statistical Hypothesis Testing",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+      "Identified a significant decline in Average Order Value (AOV), falling from $125.24 in Q3 2024 to $98.40 in Q3 2025 while order volume increased from 11,769 to 12,683 orders",
+      "Discovered that average discounts increased from approximately 6.05% in Q3 2024 to 22.03% in Q3 2025, significantly reducing realized revenue per order",
+      "Validated that the increase in Q3 2025 discount rates was statistically significant using an independent two-sample t-test",
+      "Found that customer acquisition declined consistently from the beginning of the second year, falling from 1,991 new customers in Q1 2024 to 787 in Q4 2025",
+      "Established that all five marketing sources—Email, Organic Search, Paid Ads, Referral, and Social Media—experienced lower customer acquisition in Q3 2025 compared with Q3 2024",
+      "Used cohort-based retention analysis to show that customer retention remained relatively stable, indicating that declining retention was not the primary driver of the revenue problem",
+      "Ruled out product-category mix, average items per order, and average unit price as major contributors after comparing Q3 2024 and Q3 2025 performance",
+      "Identified that the broad-based discount strategy was ineffective in generating proportional order growth, with only a weak relationship between discount percentage and order volume",
+      "Recommended replacing the universal discount strategy with targeted, segment-specific incentives while investigating the declining performance of individual customer acquisition channels",
+      "Proposed continuous KPI monitoring and A/B testing to measure the effectiveness of the recommended strategies and validate whether the identified root causes improve"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/NimbusMart",
+
+    notebook:
+      "/notebooks/NimbusMart_Revenue_Analysis.html"
+  }, 
   
   "techpulse-tech-news-analytics-platform": {
 
