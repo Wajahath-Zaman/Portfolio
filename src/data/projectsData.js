@@ -2,7 +2,7 @@
 
 const projectsData = {
 
-  "nimbusmart-revenue-root-cause-analysis": {
+  "nimbusmart-revenue-decline-root-cause-analysis": {
 
     title: "NimbusMart - Revenue Decline Root Cause Analysis",
 
