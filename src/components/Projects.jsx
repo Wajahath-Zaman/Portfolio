@@ -111,7 +111,7 @@ const projects = [
 
     chart: (
       <img
-        src="/images/creditCardFraudDetection.png"
+        src="public/images/creditCardFraudDetection.png"
         alt="Credit Card Fraud Detection"
         className="w-full h-[200px] object-cover rounded-lg"
       />
