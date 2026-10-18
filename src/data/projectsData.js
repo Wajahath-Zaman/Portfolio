@@ -108,7 +108,7 @@ const projectsData = {
     ],
 
     github:
-      "YOUR_GITHUB_REPOSITORY_URL",
+      "https://github.com/Wajahath-Zaman/Supervised-ML---Regression---House_Price_Prediction",
 
     notebook:
       "/notebooks/HousePricePrediction.html"
