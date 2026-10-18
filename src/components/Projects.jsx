@@ -10,7 +10,8 @@ import {
   FaNewspaper,
   FaChartLine,
   FaUtensils,
-  FaShieldAlt
+  FaShieldAlt,
+  FaHome
 } from "react-icons/fa"
 
 import {
@@ -98,6 +99,51 @@ const customerAcquisitionTrendData = [
 
 
 const projects = [
+
+  {
+    title: "ML - Regression - Indian House Price Prediction - Regression Analysis",
+
+    slug: "indian-house-price-prediction",
+
+    description:
+      "Developed an end-to-end machine learning regression pipeline to predict residential property prices across 10 major Indian cities using 80,000 property records and 17 predictive features. Performed exploratory data analysis, data quality validation, feature engineering preparation, and preprocessing using StandardScaler, OneHotEncoder, and a ColumnTransformer pipeline. Compared nine regression configurations, including Linear Regression, Ridge, Lasso, Random Forest, Gradient Boosting, XGBoost, Support Vector Regression, K-Nearest Neighbors, and Linear Regression with PCA. Applied 3-fold cross-validation for model comparison and 5-fold GridSearchCV for hyperparameter optimization of Gradient Boosting and XGBoost.",
+
+    icon: FaHome,
+
+    chart: (
+      <img
+        src="/images/indian-house-price-prediction.png"
+        alt="Indian House Price Prediction"
+        className="w-full h-[200px] object-cover rounded-lg"
+      />
+    ),
+
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "XGBoost",
+      "Regression Analysis",
+      "Exploratory Data Analysis",
+      "Feature Engineering",
+      "StandardScaler",
+      "OneHotEncoder",
+      "ColumnTransformer",
+      "Machine Learning Pipelines",
+      "Principal Component Analysis (PCA)",
+      "Cross-Validation",
+      "GridSearchCV",
+      "MAE",
+      "RMSE",
+      "R² Score"
+    ],
+
+    impact:
+      "Evaluated nine regression configurations and identified Gradient Boosting as the strongest default model based on cross-validation, achieving an MAE of 34.09 lakhs, an RMSE of 67.82 lakhs, and an R² score of 0.7848. Subsequently optimized Gradient Boosting and XGBoost using 5-fold GridSearchCV. The tuned XGBoost model achieved an MAE of 32.28 lakhs, an RMSE of 70.41 lakhs, and an R² score of 0.7782 on the validation set. Selected XGBoost as the final model following hyperparameter optimization, demonstrating the value of systematic model comparison and tuning for residential property price prediction."
+  },
 
   {
     title: "ML - Credit Card Fraud Detection - Imbalanced Classification",

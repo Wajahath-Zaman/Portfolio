@@ -53,6 +53,65 @@ const projectsData = {
 
     notebook:
       "/notebooks/creditCardFraudPrediction.html"
+  },
+
+  "indian-house-price-prediction": {
+
+    title: "Indian House Price Prediction - Regression Analysis",
+
+    category: "Machine Learning & Regression",
+
+    description:
+      "Built an end-to-end machine learning regression pipeline to estimate residential property prices across 10 major Indian cities using a dataset of 80,000 property records. Conducted exploratory data analysis to investigate target distribution, outliers, feature relationships, correlations, and differences in property prices across cities, locality categories, and property types. Implemented a preprocessing pipeline using StandardScaler for numerical features, OneHotEncoder for categorical features, and passthrough handling for binary features. Compared nine regression configurations using 3-fold cross-validation and evaluated their performance using Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R². Applied 5-fold GridSearchCV to optimize Gradient Boosting and XGBoost before selecting the final model.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "XGBoost",
+      "Linear Regression",
+      "Ridge Regression",
+      "Lasso Regression",
+      "Random Forest Regressor",
+      "Gradient Boosting Regressor",
+      "Support Vector Regression",
+      "K-Nearest Neighbors",
+      "Principal Component Analysis (PCA)",
+      "StandardScaler",
+      "OneHotEncoder",
+      "ColumnTransformer",
+      "Machine Learning Pipelines",
+      "Cross-Validation",
+      "GridSearchCV",
+      "Regression Metrics",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+      "Analysed 80,000 residential property records containing 18 original columns, including the target variable Price_INR_Lakhs, covering 10 major Indian cities",
+      "Validated data quality by checking missing values, duplicate records, negative numerical values, floor-number inconsistencies, and carpet-area inconsistencies",
+      "Identified a strong positive correlation between Super_Area_SqFt and property prices, with a Pearson correlation coefficient of approximately 0.635",
+      "Found a correlation of approximately 0.983 between super area and carpet area, highlighting substantial multicollinearity between these two features",
+      "Implemented a preprocessing pipeline using StandardScaler, OneHotEncoder, and ColumnTransformer to handle numerical, categorical, and binary features",
+      "Created separate training, validation, and test sets containing 56,000, 12,000, and 12,000 records, respectively",
+      "Compared nine regression configurations using 3-fold cross-validation and evaluated them using MAE, MSE, RMSE, and R²",
+      "Identified Gradient Boosting as the strongest default configuration, achieving an MAE of 34.09 lakhs, an RMSE of 67.82 lakhs, and an R² score of 0.7848 during cross-validation",
+      "Evaluated Linear Regression with PCA and found that its performance was weaker than standard Linear Regression, with MAE increasing from 47.82 lakhs to 53.20 lakhs",
+      "Optimized Gradient Boosting using 5-fold GridSearchCV across 48 hyperparameter combinations, obtaining a best cross-validation RMSE of approximately 67.26 lakhs",
+      "Optimized XGBoost using 5-fold GridSearchCV across 72 hyperparameter combinations, obtaining a best cross-validation RMSE of approximately 66.79 lakhs",
+      "Selected XGBoost as the final model after hyperparameter tuning, with learning_rate=0.05, max_depth=5, n_estimators=200, subsample=0.8, and colsample_bytree=0.8",
+      "Achieved a validation MAE of 32.28 lakhs, RMSE of 70.41 lakhs, and R² score of 0.7782 with the tuned XGBoost model",
+      "Performed residual diagnostics on validation predictions, obtaining a mean residual of approximately 0.65 lakhs and a median residual of approximately -2.31 lakhs"
+    ],
+
+    github:
+      "YOUR_GITHUB_REPOSITORY_URL",
+
+    notebook:
+      "/notebooks/HousePricePrediction.html"
   }
 
   , "tapeats-gmv-decline-root-cause-analysis": {
