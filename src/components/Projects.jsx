@@ -100,7 +100,7 @@ const customerAcquisitionTrendData = [
 const projects = [
 
   {
-    title: "Credit Card Fraud Detection - Imbalanced Classification",
+    title: "ML - Credit Card Fraud Detection - Imbalanced Classification",
 
     slug: "credit-card-fraud-detection",
 
