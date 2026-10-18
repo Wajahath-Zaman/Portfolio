@@ -99,58 +99,99 @@ const customerAcquisitionTrendData = [
 const projects = [
 
   {
-  title: "TapEats - GMV Decline Root Cause Analysis",
+    title: "Credit Card Fraud Detection - Imbalanced Classification",
 
-  slug: "tapeats-gmv-decline-root-cause-analysis",
+    slug: "credit-card-fraud-detection",
 
-  description:
-    "Conducted an end-to-end business analytics investigation to identify the root cause behind TapEats' GMV decline using approximately 100,000 order-level transactions spanning two years across six major cities. Decomposed GMV into completed orders and average order value, investigated the order fulfillment pipeline, cancellations, delivery performance, customer acquisition, retention, acquisition channels, payment methods, cuisines, and platforms to isolate the primary driver of the decline.",
+    description:
+      "Developed a machine learning classification pipeline to detect fraudulent credit card transactions using a highly imbalanced dataset containing approximately 284,000 transactions. Performed data exploration, duplicate removal, stratified train-validation-test splitting, and 3-fold stratified cross-validation to evaluate multiple classification algorithms. Compared Random Forest, Logistic Regression, Gradient Boosting, XGBoost, and K-Nearest Neighbors using class-weight adjustments and SMOTE oversampling to address the extreme class imbalance. Evaluated model performance using Precision, Recall, F1-score, and Precision-Recall AUC (PR-AUC), prioritizing fraud detection performance over accuracy. Initiated hyperparameter optimization using GridSearchCV with average precision as the scoring metric.",
 
-  icon: FaUtensils,
+    icon: FaShieldAlt,
 
-  chart: (
-    <ResponsiveContainer width="100%" height={200}>
-      <AreaChart data={customerAcquisitionTrendData}>
-        <defs>
-          <linearGradient id="colorAcquisition" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#a611d3" stopOpacity={0.8} />
-            <stop offset="95%" stopColor="#c21ed1" stopOpacity={0} />
-          </linearGradient>
-        </defs>
+    image: (
+      <img
+        src="/images/creditCardFraudDetection.png"
+        alt="Credit Card Fraud Detection"
+        className="w-full h-[200px] object-cover rounded-lg"
+      />
+    ),
 
-        <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Imbalanced-learn",
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression",
+      "Gradient Boosting",
+      "K-Nearest Neighbors",
+      "SMOTE",
+      "Class Weighting",
+      "Stratified K-Fold Cross-Validation",
+      "GridSearchCV",
+      "Precision-Recall AUC",
+      "Model Evaluation",
+      "Hyperparameter Tuning"
+    ],
 
-        <XAxis dataKey="month" />
+    impact:
+      "Built a systematic fraud detection workflow addressing the challenges of extreme class imbalance, where fraudulent transactions represent approximately 0.17% of the original dataset. Compared five classification algorithms across different imbalance-handling strategies, including class weighting and SMOTE, using consistent cross-validation and fraud-focused evaluation metrics. Established a model selection framework prioritizing Precision, Recall, F1-score, and PR-AUC, followed by hyperparameter optimization using average precision. The resulting workflow provides a foundation for selecting a fraud detection model that balances the identification of fraudulent transactions against false-positive alerts."
+  },
+  {
+    title: "TapEats - GMV Decline Root Cause Analysis",
 
-        <YAxis />
+    slug: "tapeats-gmv-decline-root-cause-analysis",
 
-        <Tooltip />
+    description:
+      "Conducted an end-to-end business analytics investigation to identify the root cause behind TapEats' GMV decline using approximately 100,000 order-level transactions spanning two years across six major cities. Decomposed GMV into completed orders and average order value, investigated the order fulfillment pipeline, cancellations, delivery performance, customer acquisition, retention, acquisition channels, payment methods, cuisines, and platforms to isolate the primary driver of the decline.",
 
-        <Area
-          type="monotone"
-          dataKey="customers2024"
-          stroke="#10b981"
-          fill="url(#colorAcquisition)"
-        />
-      </AreaChart>
-    </ResponsiveContainer>
-  ),
+    icon: FaUtensils,
 
-  tech: [
-    "Google Sheets",
-    "Pivot Tables",
-    "Data Analysis",
-    "Data Visualization",
-    "Business Metrics",
-    "GMV Analysis",
-    "Customer Acquisition Analysis",
-    "Customer Retention Analysis",
-    "Cohort Analysis"
-  ],
+    chart: (
+      <ResponsiveContainer width="100%" height={200}>
+        <AreaChart data={customerAcquisitionTrendData}>
+          <defs>
+            <linearGradient id="colorAcquisition" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#a611d3" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#c21ed1" stopOpacity={0} />
+            </linearGradient>
+          </defs>
 
-  impact:
-    "Investigated the decline in TapEats' GMV by analysing order volume, order cancellations, restaurant cancellations, delivery performance, customer acquisition, retention, and average order value. Established that operational efficiency and customer retention remained relatively healthy while customer acquisition declined substantially across all major acquisition channels. Recommended that leadership prioritize top-of-funnel marketing and customer acquisition while maintaining existing retention and logistics operations, with the Marketing team auditing campaign spend, CPA, and channel performance to restore user growth."
-},
+          <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
+
+          <XAxis dataKey="month" />
+
+          <YAxis />
+
+          <Tooltip />
+
+          <Area
+            type="monotone"
+            dataKey="customers2024"
+            stroke="#10b981"
+            fill="url(#colorAcquisition)"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    ),
+
+    tech: [
+      "Google Sheets",
+      "Pivot Tables",
+      "Data Analysis",
+      "Data Visualization",
+      "Business Metrics",
+      "GMV Analysis",
+      "Customer Acquisition Analysis",
+      "Customer Retention Analysis",
+      "Cohort Analysis"
+    ],
+
+    impact:
+      "Investigated the decline in TapEats' GMV by analysing order volume, order cancellations, restaurant cancellations, delivery performance, customer acquisition, retention, and average order value. Established that operational efficiency and customer retention remained relatively healthy while customer acquisition declined substantially across all major acquisition channels. Recommended that leadership prioritize top-of-funnel marketing and customer acquisition while maintaining existing retention and logistics operations, with the Marketing team auditing campaign spend, CPA, and channel performance to restore user growth."
+  },
 
   {
     title: "NimbusMart - Revenue Decline Root Cause Analysis",

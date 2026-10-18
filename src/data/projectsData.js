@@ -2,7 +2,60 @@
 
 const projectsData = {
 
-  "tapeats-gmv-decline-root-cause-analysis": {
+  "credit-card-fraud-detection": {
+
+    title: "Credit Card Fraud Detection - Imbalanced Classification",
+
+    category: "Machine Learning & Fraud Detection",
+
+    description:
+      "Developed an end-to-end machine learning pipeline to detect fraudulent credit card transactions using a highly imbalanced dataset containing 284,807 transactions. Performed exploratory data analysis, duplicate removal, stratified train-validation-test splitting, and 3-fold stratified cross-validation to evaluate multiple classification algorithms. Compared Logistic Regression, Random Forest, Gradient Boosting, XGBoost, and K-Nearest Neighbors using different imbalance-handling strategies, including class weighting and SMOTE oversampling. Evaluated models using Precision, Recall, F1-score, and Precision-Recall AUC (PR-AUC), prioritizing fraud detection performance and reliable identification of fraudulent transactions over overall accuracy.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "Imbalanced-learn",
+      "XGBoost",
+      "Logistic Regression",
+      "Random Forest",
+      "Gradient Boosting",
+      "K-Nearest Neighbors",
+      "SMOTE",
+      "Class Weighting",
+      "Stratified Train-Test Split",
+      "Stratified K-Fold Cross-Validation",
+      "GridSearchCV",
+      "Precision-Recall AUC",
+      "Hyperparameter Tuning",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+      "Analysed a highly imbalanced dataset containing 284,807 credit card transactions, with fraudulent transactions representing approximately 0.17% of the original dataset",
+      "Identified and removed duplicate transactions, resulting in a cleaned dataset containing 283,726 transactions and 30 predictor features",
+      "Implemented stratified training, validation, and test splits to preserve the distribution of fraudulent and legitimate transactions across datasets",
+      "Established a systematic model evaluation framework using 3-fold stratified cross-validation to compare classification algorithms and imbalance-handling strategies",
+      "Evaluated Logistic Regression, Random Forest, Gradient Boosting, XGBoost, and K-Nearest Neighbors using Precision, Recall, F1-score, and PR-AUC",
+      "Compared class weighting and SMOTE oversampling to address the challenges associated with extreme class imbalance",
+      "Achieved a mean PR-AUC of approximately 0.833 with the baseline Random Forest model across 3-fold cross-validation",
+      "Recorded a mean Precision of approximately 93.91% and a mean Recall of approximately 77.95% for the baseline Random Forest model during cross-validation",
+      "Prioritized fraud-specific evaluation metrics over accuracy to account for the high cost of missed fraudulent transactions and the risk of false-positive alerts",
+      "Developed a model selection strategy prioritizing Precision, Recall, F1-score, and PR-AUC before proceeding to hyperparameter optimization",
+      "Initiated Random Forest hyperparameter tuning using GridSearchCV with 5-fold cross-validation and average precision as the optimization metric"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/Supervised-ML-CreditCardFraudPrediction/tree/main",
+
+    notebook:
+      "/notebooks/creditCardFraudPrediction.html"
+  }
+
+  , "tapeats-gmv-decline-root-cause-analysis": {
 
     title: "TapEats - GMV Decline Root Cause Analysis",
 
