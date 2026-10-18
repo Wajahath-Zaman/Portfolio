@@ -9,7 +9,8 @@ import {
   FaBicycle,
   FaNewspaper,
   FaChartLine,
-  FaUtensils
+  FaUtensils,
+  FaShieldAlt
 } from "react-icons/fa"
 
 import {
@@ -108,7 +109,7 @@ const projects = [
 
     icon: FaShieldAlt,
 
-    image: (
+    chart: (
       <img
         src="/images/creditCardFraudDetection.png"
         alt="Credit Card Fraud Detection"
