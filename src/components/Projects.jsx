@@ -11,7 +11,8 @@ import {
   FaChartLine,
   FaUtensils,
   FaShieldAlt,
-  FaHome
+  FaHome,
+  FaUsers
 } from "react-icons/fa"
 
 import {
@@ -186,6 +187,52 @@ const projects = [
     impact:
       "Built a systematic fraud detection workflow addressing the challenges of extreme class imbalance, where fraudulent transactions represent approximately 0.17% of the original dataset. Compared five classification algorithms across different imbalance-handling strategies, including class weighting and SMOTE, using consistent cross-validation and fraud-focused evaluation metrics. Established a model selection framework prioritizing Precision, Recall, F1-score, and PR-AUC, followed by hyperparameter optimization using average precision. The resulting workflow provides a foundation for selecting a fraud detection model that balances the identification of fraudulent transactions against false-positive alerts."
   },
+
+  {
+    title: "ML - Customer Segmentation - RFM Analysis & K-Means Clustering",
+
+
+    slug: "customer-segmentation",
+
+    description:
+      "Built an end-to-end customer segmentation pipeline using the Online Retail II dataset, which initially contained 525,461 retail transactions. Performed exploratory data analysis and data cleaning, then engineered customer-level Recency, Frequency, and Monetary (RFM) features for 4,285 customers. Applied StandardScaler to normalize the features and used the Elbow Method and Silhouette Score to select four clusters using K-Means. Identified high-value monetary and frequency outliers using the IQR method and analysed them separately to preserve important customer groups. Interpreted the resulting segments as Retain, Re-Engage, Nurture, Reward, Pamper, Upsell, and Delight, translating the clustering results into practical customer relationship and marketing strategies.",
+
+    icon: FaUsers,
+
+    chart: (
+      <img
+        src="/images/customer-segmentation.png"
+        alt="Customer Segmentation using RFM Analysis and K-Means Clustering"
+        className="w-full h-[200px] object-cover rounded-lg"
+      />
+    ),
+
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "K-Means Clustering",
+      "RFM Analysis",
+      "Unsupervised Learning",
+      "Feature Engineering",
+      "StandardScaler",
+      "Elbow Method",
+      "Silhouette Score",
+      "IQR-Based Outlier Detection",
+      "Exploratory Data Analysis",
+      "Data Cleaning",
+      "Customer Analytics",
+      "Jupyter Notebook"
+    ],
+
+    impact:
+      "Transformed 406,309 cleaned retail transactions into a customer-level analytical dataset containing 4,285 customers and three RFM features. Selected four clusters for the primary K-Means model using the Elbow Method and Silhouette Score. Extended the segmentation analysis by identifying monetary and frequency outliers and assigning them to three additional business-oriented groups. Established seven actionable customer segments—Retain, Re-Engage, Nurture, Reward, Pamper, Upsell, and Delight—to support differentiated retention, loyalty, reactivation, and revenue-growth strategies."
+
+  },
+
   {
     title: "TapEats - GMV Decline Root Cause Analysis",
 

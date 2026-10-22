@@ -2,6 +2,64 @@
 
 const projectsData = {
 
+  "customer-segmentation": {
+
+
+    title: "Customer Segmentation - RFM Analysis & K-Means Clustering",
+
+    category: "Machine Learning & Customer Analytics",
+
+    description:
+      "Developed an end-to-end unsupervised machine learning pipeline to segment retail customers based on purchasing behavior using the Online Retail II dataset. Performed exploratory data analysis, data quality validation, and data cleaning, addressing missing customer identifiers, invalid invoice formats, non-standard stock codes, and zero-priced transactions. Engineered customer-level Recency, Frequency, and Monetary (RFM) features by aggregating transaction data and calculating the time since each customer's most recent purchase. Applied StandardScaler to normalize the RFM features and used the Elbow Method and Silhouette Score to determine the optimal number of clusters. Implemented K-Means clustering with four clusters for regular customers and separately identified high-value outliers using the Interquartile Range (IQR) method. Developed business-oriented customer segments and visualizations to support customer retention, re-engagement, nurturing, loyalty rewards, and targeted upselling strategies.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "K-Means Clustering",
+      "Unsupervised Learning",
+      "Customer Segmentation",
+      "RFM Analysis",
+      "Feature Engineering",
+      "StandardScaler",
+      "Elbow Method",
+      "Silhouette Score",
+      "Outlier Detection",
+      "Interquartile Range (IQR)",
+      "Data Cleaning",
+      "Exploratory Data Analysis",
+      "Customer Analytics",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+      "Analysed the Online Retail II dataset containing 525,461 transaction records across eight columns",
+      "Performed data cleaning by validating invoice and stock code formats, removing transactions without customer identifiers, and excluding zero-priced transactions",
+      "Retained 406,309 transaction records after the implemented cleaning steps, representing approximately 77% of the original dataset",
+      "Engineered customer-level RFM features consisting of MonetaryValue, Frequency, and RecencyValue for 4,285 unique customers",
+      "Applied StandardScaler to normalize RFM features before distance-based clustering",
+      "Evaluated candidate cluster counts using the Elbow Method and Silhouette Score, selecting four clusters for the primary K-Means model",
+      "Segmented regular customers into four groups: Retain, Re-Engage, Nurture, and Reward",
+      "Identified 423 monetary outliers and 279 frequency outliers using the IQR method, with 226 customers appearing in both groups",
+      "Developed a separate outlier classification strategy to preserve valuable customers rather than excluding them from the final analysis",
+      "Classified outlier customers into three additional groups: Pamper, Upsell, and Delight",
+      "Created visualizations including cluster comparison plots, three-dimensional scatter plots, violin plots, and customer distribution charts to interpret purchasing behavior",
+      "Translated customer clusters into actionable business strategies covering loyalty programs, personalized offers, customer reactivation, and upselling opportunities"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/ML-CustomerSegmentationUsingClustering",
+
+    notebook:
+      "/notebooks/customerSegmentation.html"
+
+
+  },
+
+
   "credit-card-fraud-detection": {
 
     title: "Credit Card Fraud Detection - Imbalanced Classification",
