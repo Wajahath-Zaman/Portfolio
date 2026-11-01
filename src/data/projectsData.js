@@ -59,7 +59,7 @@ const projectsData = {
 
   },
 
-  "time-series-forecasting": {
+  "french-bakery-time-series-forecasting": {
 
     title: "Time Series Forecasting - French Bakery Daily Sales Prediction",
 
@@ -134,7 +134,13 @@ const projectsData = {
       "Identified Seasonal Naive as the stronger overall forecasting approach, achieving an MAE of 1.857, RMSE of 2.699, MAPE of 0.416, and MASE of 0.736 across the final evaluation",
 
       "Demonstrated that incorporating additional model complexity and exogenous variables does not necessarily improve forecasting accuracy over well-established seasonal baseline models"
-    ]
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/Time-Series-ML-Project",
+
+    notebook:
+      "/notebooks/TimeSeriesForecasting.html"
 
   },
 

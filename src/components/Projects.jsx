@@ -12,8 +12,7 @@ import {
   FaUtensils,
   FaShieldAlt,
   FaHome,
-  FaUsers,
-  FaChartLine
+  FaUsers
 } from "react-icons/fa"
 
 import {
