@@ -12,7 +12,8 @@ import {
   FaUtensils,
   FaShieldAlt,
   FaHome,
-  FaUsers
+  FaUsers,
+  FaMicroscope
 } from "react-icons/fa"
 
 import {
@@ -100,6 +101,59 @@ const customerAcquisitionTrendData = [
 
 
 const projects = [
+
+  {
+    title: "DL - Computer Vision - Cervical Cancer Image Classification - Deep Learning & MLOps",
+
+    slug: "cervical-cancer-image-classification",
+
+    description:
+      "Developed an end-to-end deep learning application to classify cervical cytology images into five diagnostic categories: ASCUS, HSIL, LSIL, NILM, and SCC. Prepared a cleaned dataset containing 5,566 images and implemented a stratified 70:15:15 training, validation, and testing split. Designed a custom ResizeWithPadding preprocessing transformation to preserve image aspect ratios, followed by RGB conversion, tensor transformation, and ImageNet normalization. Conducted three custom CNN experiments, evaluating baseline performance, class weighting, and higher image resolution before transitioning to transfer learning using ImageNet-pretrained ResNet50. Implemented a two-stage training strategy involving a frozen backbone followed by fine-tuning of the final residual block and classification head. Evaluated the final model using accuracy, precision, recall, macro F1-score, weighted F1-score, and class-wise metrics. Integrated MLflow with DagsHub for experiment tracking and model artifact management. Developed a FastAPI inference backend, automated API testing using Pytest, containerized the frontend and backend independently using Docker, and built a Streamlit interface for image classification. Implemented continuous integration using GitHub Actions and deployed both services independently on Render.",
+
+    icon: FaMicroscope,
+
+    chart: (
+      <img
+        src="/images/cervicalCancerImageClassification.png"
+        alt="Cervical Cancer Image Classification"
+        className="w-full h-[200px] object-cover rounded-lg"
+      />
+    ),
+
+    tech: [
+      "Python",
+      "PyTorch",
+      "Torchvision",
+      "ResNet50",
+      "Transfer Learning",
+      "Convolutional Neural Networks (CNN)",
+      "Computer Vision",
+      "Image Preprocessing",
+      "Pillow",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "Data Augmentation",
+      "ImageNet Normalization",
+      "Model Evaluation",
+      "Precision",
+      "Recall",
+      "Macro F1-score",
+      "MLflow",
+      "DagsHub",
+      "FastAPI",
+      "Streamlit",
+      "Pytest",
+      "Docker",
+      "GitHub Actions",
+      "CI/CD",
+      "Render",
+      "Google Colab"
+    ],
+
+    impact:
+      "Conducted four major model development experiments, transitioning from custom CNN architectures to ResNet50 transfer learning based on experimental results. The final ResNet50 model achieved 82.40% validation accuracy and 79.52% held-out test accuracy, with a macro F1-score of 75.83% and weighted F1-score of 78.97%. Achieved a class-wise F1-score of 90.51% for SCC and 85.42% for NILM, while identifying low ASCUS recall of 35.42% as an important limitation requiring further investigation. Integrated experiment tracking using MLflow and DagsHub, successfully exported and deployed the trained model through a FastAPI backend, and implemented a separate Streamlit frontend. Containerized both services using Docker, achieved 4/4 passing automated API tests, and established a GitHub Actions CI pipeline. Successfully deployed the complete application on Render, demonstrating an end-to-end deep learning and MLOps workflow from image preprocessing and model experimentation to API development, automated testing, containerization, and cloud deployment. The application is intended strictly for educational and experimental research, not clinical diagnosis."
+  },
 
   {
     title: "ML - Regression - Indian House Price Prediction - Regression Analysis",

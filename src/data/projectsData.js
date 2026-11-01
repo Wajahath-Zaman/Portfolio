@@ -2,6 +2,128 @@
 
 const projectsData = {
 
+  "cervical-cancer-image-classification": {
+
+    title: "Deep Learning - Computer Vision - Cervical Cancer Image Classification",
+
+    category: "Deep Learning, Computer Vision & MLOps",
+
+    description:
+      "Developed an end-to-end deep learning application to classify cervical cytology images into five diagnostic categories: ASCUS, HSIL, LSIL, NILM, and SCC. Prepared a cleaned dataset containing 5,566 images and implemented a stratified 70:15:15 training, validation, and testing split. Performed dataset inspection, class distribution analysis, image preprocessing, and implemented a custom ResizeWithPadding transformation to preserve image aspect ratios before resizing images to 512 × 512. Conducted three custom CNN experiments, investigating baseline performance, class weighting, and higher image resolution. Following the experimental results, transitioned to transfer learning using ImageNet-pretrained ResNet50. Implemented a two-stage training strategy involving a frozen backbone followed by fine-tuning of the final residual block and classification head using discriminative learning rates. Evaluated the final model using accuracy, precision, recall, macro F1-score, weighted F1-score, and class-wise classification metrics. Integrated MLflow with DagsHub for experiment tracking and model artifact management. Developed a FastAPI inference backend, implemented automated API testing using Pytest, containerized the frontend and backend independently using Docker, and built a Streamlit interface for image classification. Established a continuous integration pipeline using GitHub Actions and deployed both services independently on Render.",
+
+    technologies: [
+      "Python",
+      "PyTorch",
+      "Torchvision",
+      "ResNet50",
+      "Transfer Learning",
+      "Convolutional Neural Networks (CNN)",
+      "Computer Vision",
+      "Image Classification",
+      "Image Preprocessing",
+      "Pillow",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "ImageNet Normalization",
+      "ResizeWithPadding",
+      "Stratified Train-Test Split",
+      "Model Evaluation",
+      "Accuracy",
+      "Precision",
+      "Recall",
+      "Macro F1-score",
+      "Weighted F1-score",
+      "MLflow",
+      "DagsHub",
+      "Model Artifact Management",
+      "FastAPI",
+      "Uvicorn",
+      "Streamlit",
+      "HTTP Requests",
+      "Pytest",
+      "Automated Testing",
+      "Docker",
+      "Docker Networking",
+      "GitHub Actions",
+      "Continuous Integration",
+      "CI/CD",
+      "Render",
+      "Google Colab",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+
+      "Prepared a cleaned cervical cytology image dataset containing 5,566 images distributed across five classification categories: ASCUS, HSIL, LSIL, NILM, and SCC",
+
+      "Performed original dataset inspection and identified class counts of 782 ASCUS, 1,583 HSIL, 1,339 LSIL, 2,101 NILM, and 462 SCC images",
+
+      "Implemented a stratified dataset split containing 3,896 training images (70%), 835 validation images (15%), and 835 testing images (15%)",
+
+      "Developed a custom ResizeWithPadding preprocessing transformation to preserve image aspect ratios while resizing images to 512 × 512 pixels",
+
+      "Established a preprocessing pipeline involving RGB conversion, aspect-ratio-preserving resizing, padding, PyTorch tensor conversion, and ImageNet normalization",
+
+      "Conducted three custom CNN experiments to investigate classification performance using a baseline architecture, class weighting, and increased image resolution",
+
+      "Achieved 40.12% validation accuracy and 25.74% macro F1-score with the baseline custom CNN",
+
+      "Evaluated class weighting as an imbalance-handling strategy, obtaining 25.99% validation accuracy and 8.25% macro F1-score, with the model exhibiting prediction collapse predominantly towards HSIL",
+
+      "Improved custom CNN performance through increased input resolution of 1024 × 1024, achieving 55.69% validation accuracy and 45.59% macro F1-score",
+
+      "Transitioned from custom CNN architectures to ImageNet-pretrained ResNet50 transfer learning based on the outcomes of the initial experiments",
+
+      "Implemented a two-stage transfer learning strategy, initially freezing the pretrained backbone and training the classification head, followed by fine-tuning the final residual block (layer4) and classification head",
+
+      "Achieved 65.27% validation accuracy during the frozen-backbone stage, with a best validation loss of 0.8852",
+
+      "Improved performance through fine-tuning, achieving 82.40% validation accuracy and a best validation loss of 0.5178",
+
+      "Evaluated the final ResNet50 model on a held-out test dataset containing 835 images, achieving 79.52% test accuracy",
+
+      "Achieved a macro precision of 77.23%, macro recall of 75.20%, macro F1-score of 75.83%, and weighted F1-score of 78.97% on the test dataset",
+
+      "Evaluated class-wise performance, achieving F1-scores of 38.86% for ASCUS, 83.26% for HSIL, 81.08% for LSIL, 90.51% for SCC, and 85.42% for NILM",
+
+      "Identified ASCUS as the weakest-performing category, with a recall of 35.42%, highlighting the need for further investigation into class-specific model performance",
+
+      "Integrated MLflow with DagsHub to track model configurations, hyperparameters, training history, validation metrics, evaluation results, and model checkpoints across separate experimental runs",
+
+      "Exported the selected ResNet50 model as a reusable artifact containing the model state dictionary, class information, input dimensions, and normalization parameters",
+
+      "Developed a FastAPI inference backend with root, health-check, and image prediction endpoints, including image validation, preprocessing, model inference, and JSON prediction responses",
+
+      "Implemented automated API testing using Pytest, covering the root endpoint, health endpoint, image prediction endpoint, and invalid file format handling, achieving 4/4 passing tests",
+
+      "Containerized the FastAPI backend and Streamlit frontend independently using Docker and established a custom Docker bridge network for local inter-container communication",
+
+      "Developed a Streamlit frontend supporting image uploads, image previews, prediction requests, classification results, confidence scores, loading indicators, and error handling",
+
+      "Integrated GitHub Actions to automate dependency installation and execution of the Pytest suite whenever code is pushed to the main branch or a pull request targets it",
+
+      "Successfully deployed the FastAPI backend and Streamlit frontend as independent Docker-based services on Render, with frontend-backend communication established through HTTP requests",
+
+      "Demonstrated an end-to-end deep learning and MLOps workflow covering dataset preparation, model experimentation, transfer learning, experiment tracking, artifact management, API development, automated testing, containerization, continuous integration, and cloud deployment",
+
+      "Documented important limitations, including low ASCUS recall, the absence of verified patient-level identifiers, unverified external generalization, uncalibrated confidence scores, and the absence of automated production monitoring and retraining"
+    ],
+
+    github:
+      "https://github.com/Wajahath-Zaman/ClevicalCancerImageClassification-_DL-Project",
+
+    frontend:
+      "https://clevicalcancerimageclassification-1dq9.onrender.com",
+
+    backend:
+      "https://clevicalcancerimageclassification-dl.onrender.com",
+
+    notebook:
+      "/notebooks/Cancer_Image_Classification_DL.html"
+
+  },
+
   "customer-segmentation": {
 
 
