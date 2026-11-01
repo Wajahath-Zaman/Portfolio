@@ -59,6 +59,85 @@ const projectsData = {
 
   },
 
+  "time-series-forecasting": {
+
+    title: "Time Series Forecasting - French Bakery Daily Sales Prediction",
+
+    category: "Machine Learning & Time Series Forecasting",
+
+    description:
+      "Developed an end-to-end time series forecasting pipeline to predict daily product sales using a French bakery sales dataset containing 57,046 transaction records across 148 unique bakery products. Performed exploratory time series analysis, examined historical sales patterns, identified product-level demand variations, and investigated weekly seasonality. Selected SEIGLE as the primary forecasting target and implemented multiple statistical forecasting approaches using the StatsForecast library. Established baseline models using Naive, Historic Average, Window Average, and Seasonal Naive forecasting methods. Subsequently implemented ARIMA and SARIMA models using automatic parameter selection and compared their performance against baseline approaches. Applied time-series cross-validation using eight rolling forecast windows with a seven-day prediction horizon. Extended the forecasting pipeline by incorporating exogenous variables, including unit price, and engineered temporal and Fourier features to capture weekly seasonal patterns. Implemented prediction intervals with 80% confidence levels and evaluated forecasting performance using MAE, MSE, RMSE, MAPE, SMAPE, MASE, and Scaled CRPS.",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "StatsForecast",
+      "UtilsForecast",
+      "Time Series Analysis",
+      "Time Series Forecasting",
+      "Naive Forecasting",
+      "Historic Average",
+      "Window Average",
+      "Seasonal Naive",
+      "ARIMA",
+      "SARIMA",
+      "AutoARIMA",
+      "Statistical Forecasting",
+      "Exogenous Variables",
+      "Feature Engineering",
+      "Fourier Features",
+      "Temporal Feature Engineering",
+      "Weekly Seasonality",
+      "Time Series Cross-Validation",
+      "Rolling Window Validation",
+      "Prediction Intervals",
+      "Probabilistic Forecasting",
+      "MAE",
+      "MSE",
+      "RMSE",
+      "MAPE",
+      "SMAPE",
+      "MASE",
+      "Scaled CRPS",
+      "Jupyter Notebook"
+    ],
+
+    results: [
+      "Analysed the French bakery daily sales dataset containing 57,046 records, three initial modelling columns, and 148 unique bakery products",
+
+      "Converted date information into datetime format and structured the dataset according to the StatsForecast requirements: unique_id, ds, and y",
+
+      "Identified SEIGLE as the primary forecasting target, containing 637 daily observations spanning January 2021 to September 2022",
+
+      "Established four baseline forecasting approaches: Naive, Historic Average, Window Average, and Seasonal Naive, using a seven-day forecasting horizon",
+
+      "Evaluated baseline models across multiple bakery products using a seven-day holdout validation strategy, achieving an overall average MAE of 6.076 for Naive, 5.253 for Historic Average, 5.016 for Window Average, and 4.724 for Seasonal Naive",
+
+      "Implemented ARIMA and SARIMA using AutoARIMA, comparing their forecasting performance against the baseline models for SEIGLE",
+
+      "Performed eight-window time series cross-validation with a seven-day forecast horizon, achieving MAE scores of 1.857 for Seasonal Naive, 2.491 for ARIMA, and 2.646 for SARIMA",
+
+      "Investigated the impact of exogenous variables by incorporating historical unit prices into SARIMA forecasting, achieving a cross-validation MAE of 2.795",
+
+      "Engineered temporal features including day, week, and month, alongside Fourier sine and cosine transformations to represent weekly seasonal patterns",
+
+      "Implemented SARIMA with Fourier-based temporal features, achieving a cross-validation MAE of 2.057",
+
+      "Implemented 80% prediction intervals to quantify forecasting uncertainty and visualize lower and upper prediction boundaries",
+
+      "Conducted a comprehensive final evaluation comparing SARIMA with exogenous variables against Seasonal Naive using MAE, MSE, RMSE, MAPE, SMAPE, MASE, and Scaled CRPS",
+
+      "Identified Seasonal Naive as the stronger overall forecasting approach, achieving an MAE of 1.857, RMSE of 2.699, MAPE of 0.416, and MASE of 0.736 across the final evaluation",
+
+      "Demonstrated that incorporating additional model complexity and exogenous variables does not necessarily improve forecasting accuracy over well-established seasonal baseline models"
+    ]
+
+  },
+
 
   "credit-card-fraud-detection": {
 

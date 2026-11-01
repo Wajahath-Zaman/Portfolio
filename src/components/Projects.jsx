@@ -12,7 +12,8 @@ import {
   FaUtensils,
   FaShieldAlt,
   FaHome,
-  FaUsers
+  FaUsers,
+  FaChartLine
 } from "react-icons/fa"
 
 import {
@@ -144,6 +145,61 @@ const projects = [
 
     impact:
       "Evaluated nine regression configurations and identified Gradient Boosting as the strongest default model based on cross-validation, achieving an MAE of 34.09 lakhs, an RMSE of 67.82 lakhs, and an R² score of 0.7848. Subsequently optimized Gradient Boosting and XGBoost using 5-fold GridSearchCV. The tuned XGBoost model achieved an MAE of 32.28 lakhs, an RMSE of 70.41 lakhs, and an R² score of 0.7782 on the validation set. Selected XGBoost as the final model following hyperparameter optimization, demonstrating the value of systematic model comparison and tuning for residential property price prediction."
+  },
+  {
+    title: "ML - Time Series Forecasting - French Bakery Daily Sales Prediction",
+
+    slug: "french-bakery-time-series-forecasting",
+
+    description:
+      "Developed an end-to-end time series forecasting pipeline to predict daily bakery product sales using the French Bakery dataset. Performed exploratory time series analysis, investigated historical sales patterns, and examined weekly seasonality across multiple product categories. Selected SEIGLE as the primary forecasting target and implemented multiple statistical forecasting approaches, including Naive, Historic Average, Window Average, Seasonal Naive, ARIMA, and SARIMA. Applied AutoARIMA for automatic model parameter selection and utilized StatsForecast for model implementation and evaluation. Performed rolling-window time series cross-validation using eight validation windows and a seven-day forecasting horizon. Extended the forecasting pipeline by incorporating exogenous variables, including unit price, and engineered temporal and Fourier features to capture recurring seasonal patterns. Implemented probabilistic forecasting with 80% prediction intervals and evaluated model performance using MAE, MSE, RMSE, MAPE, SMAPE, MASE, and Scaled CRPS.",
+
+    icon: FaChartLine,
+
+    chart: (
+      <img
+        src="/images/frenchBakeryTimeSeriesForecasting.png"
+        alt="French Bakery Time Series Forecasting"
+        className="w-full h-[200px] object-cover rounded-lg"
+      />
+    ),
+
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "StatsForecast",
+      "UtilsForecast",
+      "Time Series Analysis",
+      "Time Series Forecasting",
+      "Naive Forecasting",
+      "Seasonal Naive",
+      "ARIMA",
+      "SARIMA",
+      "AutoARIMA",
+      "Statistical Forecasting",
+      "Exogenous Variables",
+      "Fourier Features",
+      "Temporal Feature Engineering",
+      "Weekly Seasonality",
+      "Time Series Cross-Validation",
+      "Rolling Window Validation",
+      "Prediction Intervals",
+      "Probabilistic Forecasting",
+      "MAE",
+      "MSE",
+      "RMSE",
+      "MAPE",
+      "SMAPE",
+      "MASE",
+      "Scaled CRPS",
+      "Jupyter Notebook"
+    ],
+
+    impact:
+      "Implemented and evaluated multiple statistical forecasting approaches using eight-window rolling cross-validation with a seven-day forecasting horizon. Established Seasonal Naive as the strongest overall forecasting approach, achieving an MAE of 1.857, RMSE of 2.699, MAPE of 0.416, and MASE of 0.736 in the final evaluation. Experimented with SARIMA incorporating unit-price information and Fourier-based temporal features, achieving an MAE of 2.795 and 2.057 respectively. Implemented 80% prediction intervals to quantify forecasting uncertainty and evaluated models across seven performance metrics. Demonstrated that sophisticated forecasting models and additional explanatory features do not necessarily outperform simpler seasonal baselines, highlighting the importance of systematic model comparison and validation."
   },
 
   {
